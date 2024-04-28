@@ -1,0 +1,22 @@
+.u-list{
+  li{
+    position: relative;
+    padding: 0 0 0 45px;
+    margin: 0 0 20px 0;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/dest/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  li:last-child{
+    margin: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.stickers {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 -20px;
+
+  li {
+    margin: 0 0 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #E9F1E7;
+    border-radius: 5px;
+    height: 30px;
+    color: #388D3C;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    width: fit-content;
+  }
+}
+
+
