@@ -1556,7 +1556,7 @@ body {
     margin: 0 0 15px 0;
   }
   .stickers {
-    margin: 0 0 35px -10px !important;
+    margin: 0 0 0 -10px !important;
   }
   .stickers li {
     margin: 0 0 15px 10px !important;
