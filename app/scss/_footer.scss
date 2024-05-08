@@ -1,0 +1,34 @@
+.footer {
+  background-color: #003E83;
+
+  .container {
+    max-width: 1290px;
+  }
+
+  &__inner {
+    padding: 21px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p,
+  a {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C9DAEB;
+    margin: 0;
+  }
+
+  nav {
+    margin: 0 0 0 auto;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 0 0 30px;
+  }
+}

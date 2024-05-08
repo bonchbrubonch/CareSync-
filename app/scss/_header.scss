@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0px 0px 16px #2264AD14;
+  border-radius: 0px 0px 56px 56px;
+  background-color: #fff;
+  z-index: 9999;
+
+  &__inner {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 168px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  span {
+    font-size: 16px;
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    color: #3F4254;
+
+    a {
+      color: #2264AD;
+      font-weight: 600;
+      text-decoration: underline solid 2px;
+      text-decoration-color: transparent;
+      transition: linear .2s;
+
+      &:hover {
+        text-decoration-color: #2264AD;
+      }
+    }
+  }
+
+  strong {
+    display: flex;
+    padding: 0 10px;
+  }
+}

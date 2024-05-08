@@ -2,60 +2,10 @@
 @import "list";
 @import "stickers";
 @import "box";
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 1200px;
-  width: 100%;
-  box-shadow: 0px 0px 16px #2264AD14;
-  border-radius: 0px 0px 56px 56px;
-  background-color: #fff;
-  z-index: 9999;
-
-  &__inner {
-    height: 70px;
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    width: 168px;
-    height: 100%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  span {
-    font-size: 16px;
-    margin: 0 0 0 auto;
-    display: flex;
-    align-items: center;
-    color: #3F4254;
-
-    a {
-      color: #2264AD;
-      font-weight: 600;
-      text-decoration: underline solid 2px;
-      text-decoration-color: transparent;
-      transition: linear .2s;
-
-      &:hover {
-        text-decoration-color: #2264AD;
-      }
-    }
-  }
-
-  strong {
-    display: flex;
-    padding: 0 10px;
-  }
-}
+@import "header";
+@import "footer";
+@import "privacy-policy";
+@import "utilities";
 
 .u-intro {
   position: relative;
@@ -106,7 +56,7 @@
 .customized {
   padding: 35px 0 40px;
 
-  .title {
+  .question-title {
     margin: 0 0 40px 0;
   }
 
@@ -147,7 +97,7 @@
 .software {
   padding: 40px 0 40px;
 
-  .title {
+  .question-title {
     margin: 0 0 40px 0;
   }
 
@@ -201,7 +151,7 @@
     max-width: 360px;
     width: 100%;
     margin: 0 25px 0 0;
-  
+
     strong {
       font-size: 24px;
       line-height: 36px;
@@ -219,7 +169,7 @@
 .homecare {
   padding: 40px 0 60px;
 
-  .title {
+  .question-title {
     margin: 0 auto 15px;
     max-width: 1050px;
   }
@@ -346,7 +296,7 @@
   background-color: #F9F9F9;
   padding: 80px 0 85px;
 
-  .title {
+  .question-title {
     margin: 0 0 15px 0;
   }
 
@@ -423,7 +373,7 @@
 .solution {
   padding: 40px 0 80px;
 
-  .title {
+  .question-title {
     margin: 0 0 30px 0;
   }
 
@@ -467,7 +417,6 @@
     background-color: #FFFFFF;
     border: 1px solid #D8E3F0;
     border-radius: 16px;
-    background-color: #fff;
     text-align: center;
     strong{
       font-weight: 600;
@@ -485,43 +434,6 @@
     width: calc(100% - 550px);
   }
 }
-
-
-.footer {
-  background-color: #003E83;
-
-  .container {
-    max-width: 1290px;
-  }
-
-  &__inner {
-    padding: 21px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  p,
-  a {
-    font-size: 12px;
-    line-height: 20px;
-    color: #C9DAEB;
-    margin: 0;
-  }
-
-  nav {
-    margin: 0 0 0 auto;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    margin: 0 0 0 30px;
-  }
-}
-
 
 
 
