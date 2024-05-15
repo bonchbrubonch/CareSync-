@@ -20,7 +20,7 @@ function browsersync() {
 
 function scripts() {
   return src([
-    
+
     'app/js/app.js',
   ])
   .pipe(concat('app.min.js'))
@@ -72,8 +72,10 @@ function buildcopy() {
     'app/js/**/*.min.js',
     'app/images/dest/**/*',
     'app/fonts/**/*',
-    'app/**/*.html',
-  ], { base: 'app' })
+    'app/pages/*.html',
+    'app/*.xml',
+    'app/*.webmanifest',
+  ], {base: 'app'})
   .pipe(dest('dist'));
 }
 
