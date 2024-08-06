@@ -12,7 +12,7 @@ const del           = require('del');
 
 function browsersync() {
   browserSync.init({
-    server: {baseDir: "app/"},
+    server: {baseDir: ["app/", 'app/pages/']},
     notify: false,
     online: true
   })
